@@ -1,0 +1,5 @@
+console.log('✅ Portfolio loaded!')
+fetch('/api/health')
+  .then(r => r.json())
+  .then(d => console.log('API Connected:', d))
+  .catch(() => console.log('Running in static mode'))
